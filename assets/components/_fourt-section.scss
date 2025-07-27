@@ -1,0 +1,171 @@
+$main-font: "Clash Display";
+$secondary-font: "Satoshi";
+$main-text-color: #fff;
+$box-bg-color: rgba(42, 37, 75, 1);
+$btn-bg-color: rgba(249, 249, 249, 0.15);
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf);
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url(../fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
+}
+
+.fourt-section {
+    padding: 40px;
+
+    .fourt-section_box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .box-item-1 {
+            flex: 1 1 48%;
+            max-width: 640px;
+            min-width: 300px;
+            height: auto;
+            padding: 40px;
+            background: $box-bg-color;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .box-title {
+                width: 100%;
+
+                p {
+                    font-family: $main-font;
+                    font-weight: 400;
+                    font-size: 32px;
+                    color: $main-text-color;
+                    padding-bottom: 10px;
+                }
+
+                span {
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $main-text-color;
+                }
+            }
+
+            button {
+                padding: 16px 32px;
+                width: 170px;
+                height: 56px;
+                background: $btn-bg-color;
+                font-family: $secondary-font;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 150%;
+                border: none;
+                color: $main-text-color;
+                cursor: pointer;
+                margin-top: auto;
+            }
+        }
+
+        img {
+            flex: 1 1 48%;
+            max-width: 640px;
+            min-width: 300px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .fourt-section {
+        padding: 32px;
+
+        .fourt-section_box {
+            flex-direction: column;
+            align-items: center;
+
+            .box-item-1,
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .box-item-1 {
+                padding: 32px;
+            }
+
+            img {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .fourt-section {
+        padding: 24px;
+
+        .fourt-section_box {
+            .box-item-1 {
+                padding: 24px;
+
+                .box-title p {
+                    font-size: 24px;
+                }
+
+                .box-title span {
+                    font-size: 16px;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .fourt-section {
+        padding: 16px;
+
+        .fourt-section_box {
+            gap: 16px;
+
+            .box-item-1 {
+                padding: 16px;
+
+                .box-title{
+                    text-align: center;
+                     p {
+                          font-size: 20px;
+                      }
+                
+                      span {
+                          font-size: 14px;
+                      }
+                }
+               
+
+                button {
+                    font-size: 14px;
+                    height: 100%;
+                }
+            }
+
+            img {
+                margin-top: 16px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

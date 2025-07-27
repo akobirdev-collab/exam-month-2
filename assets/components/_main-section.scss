@@ -1,0 +1,139 @@
+$main-bg-color: rgba(255, 255, 255, 1);
+$main-font: "Clash Display";
+$main-tex-color: #22202e;
+$secondary-text-color: #5b5676;
+$main-btn-bg-color: #f9f9f9;
+$btn-text-color: #2a254b;
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf);
+}
+.main-section {
+    width: 100%;
+    height: 704px;
+    background: url(../images/b062f355fa9b27255272d76e665cce4314b4aedb.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    .main-box {
+        background: $main-bg-color;
+        position: absolute;
+        width: 630px;
+        height: 444px;
+        top: 130px;
+        left: 680px;
+        padding: 48px 56px;
+        box-sizing: border-box;
+
+        .title {
+            width: 513px;
+            height: auto;
+
+            h2 {
+                font-family: $main-font;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 140%;
+                color: $main-tex-color;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-family: $main-font;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: $secondary-text-color;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 342px;
+            padding: 16px 32px;
+            width: 170px;
+            height: 56px;
+            background: $main-btn-bg-color;
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 150%;
+            color: $btn-text-color;
+            border: none;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .main-box {
+            width: 90%;
+            left: 5%;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            .title {
+                width: 100%;
+
+                h2 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            button {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main-section {
+            height: 100%;
+        }
+
+        .main-box {
+            height: auto;
+
+            .title {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .main-section{
+            .main-box {
+                padding: 24px 16px;
+                width: 100%;
+                height: auto;
+                    .title {
+                        h2 {
+                            font-size: 20px;
+                        }
+            
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+            
+                    button {
+                        font-size: 13px;
+                    }
+                }
+        }
+        
+    }
+}

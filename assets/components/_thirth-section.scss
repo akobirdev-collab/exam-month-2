@@ -1,0 +1,148 @@
+$main-text-color: #2a254b;
+$main-font: "Clash Display";
+$secondary-font: "Satoshi";
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf);
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url(../fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
+}
+
+.thirth-section {
+    text-align: center;
+    padding: 40px 20px;
+
+    .card-wrapper {
+        padding-bottom: 48px;
+        display: flex;
+        gap: 24px;
+
+        .card-item {
+            width: 305px;
+            height: 462px;
+            background: #f4f4f4;
+            .card-item-title {
+                padding-top: 10px;
+                width: 100%;
+                width: 154px;
+                text-align: left;
+                p {
+                    font-family: $main-font;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: $main-text-color;
+                }
+
+                span {
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $main-text-color;
+                }
+            }
+        }
+    }
+
+    button {
+        padding: 16px 32px;
+        width: 170px;
+        height: 56px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 15px;
+        border: none;
+        line-height: 150%;
+        color: $main-text-color;
+        background: #f0f0f0;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1024px) {
+        .card-wrapper {
+            margin-top: 750px;
+            flex-wrap: wrap;
+            .card-item {
+                width: 45%;
+                height: auto;
+                margin: 0 auto;
+                img {
+                        width: 100%;
+                        height: auto;
+                    }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .card-wrapper {
+            flex-wrap: wrap;
+            .card-item {
+                width: 45%;
+                height: auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+                .card-item-title {
+                    p {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+  @media (max-width: 480px) {
+      padding: 24px 12px;
+
+      .card-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+
+          .card-item {
+              width: 45%;
+              box-sizing: border-box;
+
+              img {
+                  width: 100%;
+                  height: auto;
+              }
+
+              .card-item-title {
+                  p {
+                      font-size: 16px;
+                      margin-top: 8px;
+                  }
+
+                  span {
+                      font-size: 14px;
+                  }
+              }
+          }
+      }
+
+      button {
+          font-size: 13px;
+          height: 48px;
+          width: 100%;
+          margin-top: 24px;
+      }
+  }
+}
