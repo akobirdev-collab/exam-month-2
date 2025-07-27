@@ -26,6 +26,9 @@ $font-family: "Clash Display";
             color: $logo-text-color;
             text-decoration: none;
         }
+        .mobil-repo{
+            display: none;
+        }
     }
 
     .underline {
@@ -91,6 +94,13 @@ $font-family: "Clash Display";
             }
             .search{
                 display: none;
+            }
+            .shop-card i{
+                display: none;
+            }
+            .mobil-repo{
+                display: flex;
+                gap: 20px;
             }
         }
         .underline{

@@ -33,6 +33,9 @@
   color: #22202e;
   text-decoration: none;
 }
+.header .wrapper .mobil-repo {
+  display: none;
+}
 .header .underline {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -84,6 +87,13 @@
   }
   .header .wrapper .search {
     display: none;
+  }
+  .header .wrapper .shop-card i {
+    display: none;
+  }
+  .header .wrapper .mobil-repo {
+    display: flex;
+    gap: 20px;
   }
   .header .underline {
     display: none;
